@@ -9,10 +9,10 @@ def main():
 
 
     # convert to all open/close
-    etx_model_ws = os.path.join('model_ws','freyberg.usg.ext')
+    ext_model_ws = os.path.join('model_ws','freyberg.usg.ext')
     mf.external_path = "."
-    if os.path.exists(etx_model_ws):
-        shutil.rmtree(etx_model_ws)
+    if os.path.exists(ext_model_ws):
+        shutil.rmtree(ext_model_ws)
     # change dir and write
     mf.change_model_ws(etx_model_ws, reset_external=True)
     mf.write_input()
