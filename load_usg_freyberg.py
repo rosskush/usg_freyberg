@@ -14,7 +14,7 @@ def main():
     if os.path.exists(ext_model_ws):
         shutil.rmtree(ext_model_ws)
     # change dir and write
-    mf.change_model_ws(etx_model_ws, reset_external=True)
+    mf.change_model_ws(ext_model_ws, reset_external=True)
     mf.write_input()
 
 
